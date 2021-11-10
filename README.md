@@ -27,7 +27,6 @@ def mono_encrypt(message, key):
     for letter in message:
         cyphertext += alphabet_list[key[(alphabet_dict[letter] - 1) % 26]]
     return cyphertext
-
 ```
 
 This function when ran on a message will return an encrypted string of text. The decryption function works
